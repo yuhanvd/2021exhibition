@@ -1,4 +1,4 @@
-*{margin: 0;padding: 0;text-decoration: 0;overflow: hidden;}
+*{margin: 0;padding: 0;text-decoration: none;overflow: hidden;}
 
 
 .background{
@@ -33,7 +33,7 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px
+  height: 20px
 }
 .title{
   display: flex;
