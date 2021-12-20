@@ -43,39 +43,39 @@ section{
   font-weight: 700;
   font-style: normal;
   color: #31393B;
-  font-size: 8em;
+  font-size: 7em;
   height: 170px;
-}
-.title > span{
-  font-size: 5rem;
+  text-align: center;
 }
 .name_box{
   margin-top: 20px;
-  height: 415px;
-
+  border: 0px solid red;
 }
 .row{
-  width: 1284px;
-  height: 65px;
-  border: 0px solid red;
+  width: 80%;
+  height: 90%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  border: 0px solid red;
+  flex-wrap: wrap;
 }
 .name{
   width: 135px;
   height: 50px;
   background-image: url('img/name_box.png');
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-family: 'Noto Serif KR', serif;
   font-size: 1.1em;
   letter-spacing: 0.08em;
   color: #846746;
+  margin-left: 6px;
+  margin-top: 6px;
 }
 .name:hover{
   filter: drop-shadow(0px 0px 6px #846746) contrast(120%);
@@ -140,57 +140,60 @@ section{
             transform-origin: bottom;
   }
 }
-
-
-.focus-in-contract {
-	-webkit-animation: focus-in-contract 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-contract 6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
 }
-
-@-webkit-keyframes focus-in-contract {
+@-webkit-keyframes tracking-in-expand {
   0% {
-    letter-spacing: 1em;
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
+    letter-spacing: -0.5em;
     opacity: 0;
   }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-@keyframes focus-in-contract {
-  0% {
-    letter-spacing: 1em;
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-.fade-in {
-	-webkit-animation: fade-in 3s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
-	        animation: fade-in 3s cubic-bezier(0.755, 0.050, 0.855, 0.060) both;
-}
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
+  40% {
+    opacity: 0.6;
   }
   100% {
     opacity: 1;
   }
 }
-@keyframes fade-in {
+@keyframes tracking-in-expand {
   0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-bottom {
+	-webkit-animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+	        animation: fade-in-bottom 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+}
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
     opacity: 0;
   }
   100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }

@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>37th Graduated from Yuhan university : Major in visual communication design in 2021</title>
-    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="m_master.css">
+    <link rel="stylesheet" href="aos.css">
     <link rel="stylesheet" href="https://use.typekit.net/nrx3bkz.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,27 +18,24 @@
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-    <!--모바일로 이동하는 스크립트 시작-->
-    <script type="text/javascript"> var UserAgent = navigator.userAgent; if (UserAgent.match(/iPhone|ipad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null) { location.href = "m_index.html"; }
-    </script>
-    <!--모바일로 이동하는 스크립트 끝-->
-
+    <meta name="viewport" content="width=device-width">
+    <!--
+    <meta name="viewport" content="width=414, user-scalable=no, target-density-dpi=device-dpi">
+  -->
 
   </head>
   <body>
-    <div class="background kenburns-bottom"></div>
     <section>
-      <div class="sub_title1 fade-in-bottom">
+      <div class="sub_title1" data-aos="fade-up">
         37th Graduated from Yuhan university
       </div>
-      <div class="line fade-in-bottom">
+      <div class="line" data-aos="fade-up">
         <img src="img/line.png" alt="">
       </div>
-      <div class="title tracking-in-expand">
+      <div class="title" data-aos="flip-left">
         Design is Magic
       </div>
-      <div class="name_box fade-in-bottom">
+      <div class="name_box">
         <div class="row">
           <a href="https://nananna104.github.io/202009001/" target="_blank"><div class="name">김나경</div></a>
           <a href="https://one5735.github.io/portfolio/" target="_blank"><div class="name">오다경</div></a>
@@ -89,14 +87,23 @@
           <a href="https://isyou99.github.io/yuinseokportfolio/index.html" target="_blank"><div class="name">유인석</div></a>
           <a href="https://sjj802.github.io/portfolio/" target="_blank"><div class="name">신재진</div></a>
           <a href="https://chagilho.github.io/chagilho_portfolio/index.html" target="_blank"><div class="name">차길호</div></a>
+          <div class="name_blank">
         </div>
       </div>
-      <div class="sub_title2 fade-in-bottom">
-        Major in visual communication design in 2021
+      <div class="sub_title2" data-aos="fade-up">
+        Major in<br>visual communication design<br>in 2021
       </div>
-      <div class="footer fade-in-bottom">
+      <div class="footer">
         2021년 유한대학교 시각디자인학과 웹디자인실무 수업을 통해 제작된 포트폴리오 제작 프로젝트의 결과물입니다.
       </div>
     </section>
+
+    <script src="aos.js"></script>
+    <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+    </script>
+
   </body>
 </html>

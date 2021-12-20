@@ -1,0 +1,104 @@
+*{margin: 0;padding: 0;text-decoration: 0;}
+
+section{
+  background-image: url('img/m_bg.png');
+  background-position: left;
+  width: 100vw;
+  z-index: 100;
+}
+.sub_title1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: trajan-pro-3, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9em;
+  letter-spacing: -0.03em;
+  color: #31393B;
+  height: 40px;
+  padding-top: 20px;
+}
+.line{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+  margin-top: 5px;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: lust-script, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #31393B;
+  font-size: 4.5em;
+  height: 160px;
+  margin: 15px 0px;
+  text-align: center;
+}
+.name_box{
+  margin-top: 5px;
+  border: 0px solid red;
+}
+.row{
+  width: 340px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid red;
+  flex-wrap: wrap;
+}
+.name{
+  width: 105px;
+  height: 40px;
+  background-image: url('img/m_name_box.png');
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 0.9em;
+  letter-spacing: 0.08em;
+  color: #846746;
+  margin: 2px 3px;
+}
+.name_blank{
+  position: relative;
+  display: inline-block;
+  width: 105px;
+  height: 40px;
+  border: 0px solid red;
+}
+.sub_title2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: trajan-pro-3, serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.08em;
+  line-height: 1em;
+  font-size: 1.5em;
+  color: #ffffff;
+  height: 80px;
+  text-align: center;
+  padding-top: 20px;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+  color: #ffffff;
+  height: 50px;
+  opacity: 80%;
+  padding: 20px;
+}
