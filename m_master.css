@@ -1,5 +1,7 @@
 *{margin: 0;padding: 0;text-decoration: none;}
 
+a {text-decoration:none !important }
+
 section{
   background-image: url('img/m_bg.png');
   background-position: left;
