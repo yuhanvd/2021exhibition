@@ -64,7 +64,7 @@ section{
   flex-wrap: wrap;
 }
 .name{
-  width: 135px;
+  width: 123px;
   height: 50px;
   background-image: url('img/name_box.png');
   display: flex;
@@ -74,8 +74,7 @@ section{
   font-size: 1.1em;
   letter-spacing: 0.08em;
   color: #846746;
-  margin-left: 6px;
-  margin-top: 6px;
+  margin: 3px 3px;
 }
 .name:hover{
   filter: drop-shadow(0px 0px 6px #846746) contrast(120%);
